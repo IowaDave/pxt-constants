@@ -8,7 +8,7 @@ namespace constants {
      */
     //% block="PI"
     export function pi():number {
-        return 3.14159;
+        return Math.PI;
     }
     /**
      * returns a boolean value of false
@@ -23,5 +23,21 @@ namespace constants {
     //% block="ON"
     export function on():boolean {
         return true;
+    }
+    /**
+     * returns constant value of 1
+     * useful to set digital pin 'high' or 'on'
+     */
+    //% block="pinHigh"
+    export function pinHigh(): number {
+        return 1;
+    }
+    /**
+     * returns constant value of zero (0)
+     * useful to set digital pin 'low' or 'off'
+     */
+    //% block="pinLow"
+    export function pinLow(): number {
+        return 0;
     }
 } 
