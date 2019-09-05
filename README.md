@@ -47,8 +47,8 @@ These blocks provide alternative names to the values 'true' and 'false' for use 
 
 - [x] Add a reference for your blocks here
 - [ ] NA: Add "icon.png" image (300x200) in the root folder
-- [ ] NA: Add "- beta" to the GitHub project description if you are still iterating it.
-- [ ] NA: Turn on your automated build on https://travis-ci.org
+- [x] NA because finished: Add "- beta" to the GitHub project description if you are still iterating it.
+- [x] NA because not needed: Turn on your automated build on https://travis-ci.org
 - [x] Use "pxt bump" to create a tagged release on GitHub
 - [x] On GitHub, create a new file named LICENSE. Select the MIT License template.
 - [ ] Get your package reviewed and approved https://makecode.microbit.org/extensions/approval
