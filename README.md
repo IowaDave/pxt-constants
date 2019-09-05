@@ -1,13 +1,13 @@
 # pxt-constants
-## Constant-valued "reporter" blocks for MakeCode
+### A MakeCode extension package providing a selection of constant-valued "reporter" blocks 
 
-These custom blocks are intended to overcome one or both of two, understandable design limitations in the MakeCode standard blocks:
-1. Standard blocks do not support the legal TypeScript declaration, "const"
+These custom blocks are intended to overcome one or both of two design limitations in the MakeCode standard blocks:
+1. Standard blocks do not support the legal TypeScript (JavaScript) declaration, "const"
 1. The "Math.xx" constants available to TypeScript convert to gray blocks but are not directly selectable as standard blocks
 
-The limitations are understandable as a trade-off between the desire to offer a fully useful subset of the Static TypeScript language while minimizing cognitive load on novice coders. 
+The limitations are understandable as balancing the desire for a useful subset of the Static TypeScript language while minimizing the learning burden for persons at the entry-level of coding.
 
-The blocks are intended for coders who have advanced ...
+Custom blocks offer a solution for coders having gained some experience, who prefer to use the block-oriented MakeCode editor but desire access to more features of the TypeScript language.
 
 
 ## TODO
