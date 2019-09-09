@@ -38,3 +38,43 @@ let diameter = 3;
 let circumference = PI * diameter;
 basic.showNumber(circumference);
 </code></pre>
+
+<img alt="Figure 1" src="https://raw.githubusercontent.com/IowaDave/pxt-constants/gh-pages/images/Figure%201.png">
+<h5>Figure 1<br>
+The JavaScript window with an example declaring a constant</h5>
+
+<em>Dear Experts: Yes, we know about Math.PI. It will be used later in the article. Please kindly remember this article is about user-defined constant blocks.</em>
+
+<p>&ldquo;What is the problem?&rdquo; you might protest. &ldquo;I just declared and used a constant with JavaScript in MakeCode!&rdquo;</p>
+
+<p>Here is the problem: MakeCode will revise your code when you switch over to the Blocks window. Try it.</p>
+
+<p>Click the â€œBlocksâ€ icon to view the code as blocks. (Figure 2)</p>
+
+<img alt="Figure 2" src="https://raw.githubusercontent.com/IowaDave/pxt-constants/gh-pages/images/Figure%202.png">
+<h5>Figure 2<br>
+The JavaScript has been converted into blocks</h5>
+
+<p>Verify that the code still produces the correct result.</p>
+
+<p>Click the â€œJavaScriptâ€ icon again. Look at your code now. (Figure 3)</p>
+
+<img alt="Figure 3" src="https://raw.githubusercontent.com/IowaDave/pxt-constants/gh-pages/images/Figure%203.png">
+<h5>Figure 3<br>
+The blocks have been converted back into JavaScript</h5>
+
+<p>Your declaration was this: <code>const pi = 3.14159</code>. Makecode changed it to this: <code>let pi = 3.14159</code>.</p>
+
+<p>By changing one word, <code>const</code> to <code>let</code>, MakeCode turned pi into a variable. We know this because <code>let</code> is a JavaScript keyword for declaring variables.</p>
+
+<p>Now, it is certainly good practice to use meaningful names for both variables and constants. It is not a mistake to use <code>let</code> rather than <code>const</code> as a way to attach the name pi to the number 3.14159. However, it creates a risk for errors elsewhere in your code.</p>
+
+<p> risk is that a variableâ€™s name can be reassigned to a different value. Somewhere later in your code, when you are tired or in a hurry, you might enter something like the instructions shown in Figures 4 and 5.</p>
+
+<img alt="Figure 4" src="https://raw.githubusercontent.com/IowaDave/pxt-constants/gh-pages/images/Figure%204.png">
+<h5>Figure 4</h5>
+
+<img alt="Figure 5" src="https://raw.githubusercontent.com/IowaDave/pxt-constants/gh-pages/images/Figure%205.png">
+<h5>Figure 5<br>
+Examples of reassigning a variable name to a new value</h5>
+
