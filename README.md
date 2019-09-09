@@ -264,17 +264,18 @@ The yes and no blocks are diamond-shaped, like the true and false logic blocks</
 
 <p>You can load a MakeCode editor into your browser with code already typed in for the custom blocks described above. Click the following link to access the code.</p>
 
-<a href="https://makecode.microbit.org/#pub:_1wHWrFeLaF10">https://makecode.microbit.org/#pub:_1wHWrFeLaF10</a>
+<a href="https://makecode.microbit.org/#pub:_1wHWrFeLaF10">https://makecode.microbit.org/#pub:&#95;1wHWrFeLaF10</a>
 
 <p>A MakeCode extension package accompanies this article. It contains these custom blocks plus all the other Math constants built into JavaScript. You can choose to load the extension package into your project, bypassing the need to create the custom blocks yourself. The steps to do this are:</p>
 
 <ol>
 	<li>Click the gear icon in the upper-right area of the MakeCode editor</li>
 	<li>Choose Extensions from the menu that drops down</li>
-	<li>A text box will appear in the upper area of the MakeCode editor. Copy the following url and paste it into the text box: <a href="https://github.com/IowaDave/pxt-constants">https://github.com/IowaDave/pxt-constants</a></li>
+	<li>A text box will appear in the upper area of the MakeCode editor.</li>
+	<li>Copy the following url and paste it into the text box: <a href="https://github.com/IowaDave/pxt-constants">https://github.com/IowaDave/pxt-constants</a></li>
+	<li>A text box will appear that is mostly empty, except for the title, &ldquo;constants&rdquo;, and a notice that user-provided extensions are not &ldquo;endorsed&rdquo; by Microsoft.</li>
+	<li>Click the text box if you choose to go ahead and install the extension in your project.</li>
 </ol>
-
-<p>A text box will appear that is mostly empty, except for the title, &ldquo;constants&rdquo;, and a notice that user-provided extensions are not &ldquo;endorsed&rdquo; by Microsoft. Click the text box if you choose to go ahead and install the extension in your project.</p>
 
 <p>By the way, you can view the code for the extension package before you decide whether to include it in your project. Paste the link given in step 3, above, into a new browser window, or simply click the link. It will connect you to the master repository for the extension package. The relevant code is in the file named &ldquo;main.ts&rdquo;. Click on the file name to view the code.</p>
 
