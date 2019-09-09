@@ -5,7 +5,7 @@
 
 <p>This article will explain how to define a custom block to represent a constant value in MakeCode for the micro:bit.</p>
 
-<p>If you are just looking for a quick reminder on how to create custom blocks, see the introductory article in this series: <a href="https://iowadave.github.io/Custom-Blocks-Top-Ten-Tricks/">The Top Ten Tricks For Creating Custom Blocks</a>. This article builds on that one by illustrating the procedures.</p>
+<p>For a quick summary of how to create custom blocks, see the introductory article in this series: <a href="https://iowadave.github.io/Custom-Blocks-Top-Ten-Tricks/">The Top Ten Tricks For Creating Custom Blocks</a>. You will find the author&rsquo;s list of reference links related to custom blocks in there also. This article builds on that one by illustrating the procedures.</p>
 
 <p>MakeCode provides an extensive set of user-friendly graphical blocks representing commonly-used code instructions from JavaScript.</p>
 
@@ -23,11 +23,13 @@
 
 <p>For example, we know from Math that the circumference of a circle is approximately equal to the diameter multiplied by the number 3.14159. It is good coding practice to give that number a short, memorable name, such as <code>pi</code>. Use the name rather than the number to perform calculations. It makes your code easier for a human to read and to understand.</p>
 
-<p>The second reason is accuracy and consistency: type once, use many times.</p>
+<p>The second reason involves accuracy and consistency: type once, use many times. Suppose your code needs to use <em>precisely</em> the same number in several places. A custom block for a detailed number like pi can help you avoid mis-typing a lengthy string of digits.</p>
 
 <h4>JavaScript supports constants; Blocks do not</h4>
 
-<p>The &ldquo;official JavaScript&rdquo; way to declare and use a constant is to use the keyword, <code>const</code>. For example, we use it to attach the name <code>pi</code> to the value 3.14159 in Exhibit 1. If you copy and paste this code into the JavaScript window of MakeCode, it will actually compile and run on both the browser simulator and a real micro:bit. (Figure 1) A solution for the circumference of a circle having a diameter of 3 units, 9.42, will appear on the display.</p>
+<p>The &ldquo;official JavaScript&rdquo; way to declare and use a constant is to use the keyword, <code>const</code>. For example, we use it to attach the name <code>pi</code> to the value 3.14159 in Exhibit 1.</p>
+
+<p>If you copy and paste this code into the JavaScript window of MakeCode, it will actually compile and run on both the browser simulator and a real micro:bit. (Figure 1) A solution for the circumference of a circle having a diameter of 3 units, 9.42, will appear on the display.</p>
 
 <h5>Exhibit 1<br>
 Declare and use a constant</h5>
@@ -66,9 +68,9 @@ The blocks have been converted back into JavaScript</h5>
 
 <p>By changing one word, <code>const</code> to <code>let</code>, MakeCode turned <code>pi</code> into a variable. We know this because <code>let</code> is a JavaScript keyword for declaring variables.</p>
 
-<p>Now, it is certainly good practice to use meaningful names for both variables and constants. It is not a mistake to use <code>let</code> rather than <code>const</code> as a way to attach the name <code>pi</code> to the number 3.14159. However, it creates a risk for errors elsewhere in your code.</p>
+<p>Now, it is certainly good practice to use meaningful names for both variables and constants. MakeCode will not flag an error if you use <code>let</code> rather than <code>const</code> as a way to attach the name <code>pi</code> to the number 3.14159. However, it creates a risk for errors elsewhere in your code.</p>
 
-<p>The risk is that a variable&rsquo;s name can be reassigned to a different value. Somewhere later in your code, when you are tired or in a hurry, you might enter something like the instructions shown in Figures 4 and 5.</p>
+<p>The risk is that a variable&rsquo;s name can be reassigned to a different value. Somewhere later in your code, when you are tired, distracted or in a hurry, you might enter something like the instructions shown in Figures 4 and 5.</p>
 
 <h5><img alt="Figure 4" src="https://raw.githubusercontent.com/IowaDave/pxt-constants/gh-pages/images/Figure%204.png">
 <br>Figure 4</h5>
@@ -85,9 +87,9 @@ Examples of reassigning a variable name to a new value</h5>
 
 <p>JavaScript will not allow you to change the value attached to a name that was declared with the keyword <code>const</code>. The code examples in Figures 4 and 5 above would produce an error, alerting you to the problem before it can cause trouble.</p>
 
-<p>Now we see the problem: You cannot declare a <code>const</code> directly with blocks. If you do so in the main JavaScript window of MakeCode, it will be changed into a variable block.</p>
+<p>To restate the problem: you cannot declare a <code>const</code> directly with blocks. If you do so in the main JavaScript window of MakeCode, it will be changed into a variable block.</p>
 
-<p>Solution: create a custom block that functions like a <code>const</code>. And here is happy news: the MakeCode editor is the only tool you need!</p> 
+<p>Our solution: create a custom block that functions like a <code>const</code>. And here is happy news: the MakeCode editor is the only tool you need!</p> 
 
 <p>The official documentation for custom blocks, found at <a href="https://makecode.microbit.org/blocks/custom">https://makecode.microbit.org/blocks/custom</a>, states, &ldquo;Any exported JavaScript function can be turned into a block by simply adding a //% block comment.&rdquo;</p>
 
@@ -95,7 +97,7 @@ Examples of reassigning a variable name to a new value</h5>
 
 <h4>PREVIEW</h4>
 
-<p>We will go into detail -- with pictures -- about the steps for adding a file named &ldquo;custom.ts&rdquo;, where you can write code that creates a new Custom group to your MakeCode blocks. The steps are:</p>
+<p>We will go into detail &mdash; with pictures &mdash; about the steps for adding a file named &ldquo;custom.ts&rdquo;. The editor converts the code you write in custom.ts into a new Custom group of MakeCode blocks. The steps for editing the custom.ts file in a new project are:</p>
 
 <ol>
 	<li>Put the editor into scripting mode</li>
@@ -121,7 +123,7 @@ The Explorer link</h5>
 
 <h5><img alt="Figure 8" src="https://raw.githubusercontent.com/IowaDave/pxt-constants/gh-pages/images/Figure%208.png"><br>
 Figure 8<br>
-Partial list of the links under the Explorer</h5>
+Partial list of the links under the Explorer</h5>further
 
 <p>A window opens asking if you want to add custom blocks. Click &ldquo;Go Ahead&rdquo;. (Figure 9)</p>
 
@@ -129,7 +131,9 @@ Partial list of the links under the Explorer</h5>
 <br>Figure 9<br>
 The custom blocks dialog window</h5>
 
-<p>A new module named custom.ts will appear and be highlighted in the Explorer list. In future when you want to edit the custom.ts file, navigate to it under the Explorer and click to highlight it again.</p>
+<p>A new module named custom.ts will appear and be highlighted in the Explorer list.</p>
+
+<p>In future, after you have added custom.ts to your project, you may want to edit the file further. Navigate to it under the Explorer and click custom.ts to highlight it again.</p>
 
 <p>The JavaScript window will fill in with the custom.ts code ready for editing. When you first add custom.ts to your project, it will contain code examples provided by default. (Figures 10 and 11)</p>
 
