@@ -264,7 +264,7 @@ The yes and no blocks are diamond-shaped, like the true and false logic blocks</
 
 <p>You can load a MakeCode editor into your browser with code already typed in for the custom blocks described above. Click the following link to access the code.</p>
 
-<a href="https://makecode.microbit.org/#pub:_1wHWrFeLaF10">https://makecode.microbit.org/#pub:&#95;1wHWrFeLaF10</a>
+<a href="https://makecode.microbit.org/#pub:_1wHWrFeLaF10">https://makecode.microbit.org/#pub:_1wHWrFeLaF10</a>
 
 <p>A MakeCode extension package containing these custom blocks accompanies this article. You can choose to load the extension package into your project, bypassing the need to create the custom blocks yourself. The steps to do this are:</p>
 
