@@ -264,9 +264,9 @@ The yes and no blocks are diamond-shaped, like the true and false logic blocks</
 
 <p>You can load a MakeCode editor into your browser with code already typed in for the custom blocks described above. Click the following link to access the code.</p>
 
-<a href="https://makecode.microbit.org/#pub:_1wHWrFeLaF10">https://makecode.microbit.org/#pub:_1wHWrFeLaF10</a>
+<a href="https://makecode.microbit.org/#pub:_1wHWrFeLaF10">https://makecode.microbit.org/#pub:&#95;1wHWrFeLaF10</a>
 
-<p>A MakeCode extension package containing these custom blocks accompanies this article. You can choose to load the extension package into your project, bypassing the need to create the custom blocks yourself. The steps to do this are:</p>
+<p>A MakeCode extension package accompanies this article. It contains these custom blocks plus all the other Math constants built into JavaScript. You can choose to load the extension package into your project, bypassing the need to create the custom blocks yourself. The steps to do this are:</p>
 
 <ol>
 	<li>Click the gear icon in the upper-right area of the MakeCode editor</li>
@@ -284,12 +284,12 @@ The yes and no blocks are diamond-shaped, like the true and false logic blocks</
 
 <a href="https://makecode.microbit.org/blocks/custom">https://makecode.microbit.org/blocks/custom</a>
 
-<p><em>Dear Experts: As you know, JavaScript (to be completely correct, Static TypeScript) does in fact provide a special, built-in constant named PI in the Math module. It is the value that should be used in calculations because it carries pi out to the full precision available in MakeCode.</em></p>
+<p><em>Dear Experts: True, JavaScript (to be completely correct, Static TypeScript) does in fact provide a special, built-in constant named PI in the Math module. It is the value that should be used in calculations because it carries pi out to the full precision available in MakeCode.</em></p>
 
 <p><em>Alas, the Math group of blocks does not make it available by default.</em></p>
 
 <p><em>With a bit of tricky coding this built-in constant can be coaxed into appearing as a gray block. Afterward, the gray block can be re-used by copying and pasting.</em></p>
 
-<p></em>This article focuses on how to create constant-valued custom blocks having any value the user chooses to assign. We selected pi as an example, and showed how to assign it the very precise value of Math.PI.</em></p>
+<p><em>This article focuses on how to create constant-valued custom blocks having any value the user chooses to assign. We selected pi as an example, and showed how to assign it the very precise value of Math.PI.</em></p>
 
-<p><em>We leave it as an exercise for advanced readers to figure out how to utilize the built-in constant for pi as a gray block.</em></p>
+<p><em>We leave it as an exercise for advanced readers to figure out how to utilize the built-in constant for pi as a gray block, if they wish.</em></p>
