@@ -175,7 +175,7 @@ namespace custom {
 
 <h5><img alt="Figure 13" src="https://raw.githubusercontent.com/IowaDave/pxt-constants/gh-pages/images/Figure%2013.png">
 <br>Figure 13<br>
-Custom code to create the PI block</h5>
+Custom code to create the pi block</h5>
 
 <p><em>Dear Experts: We used Math.PI in this example. We will discuss this special bit of JavaScript (and others like it) in more detail at the end of the article.</em></p>
 
