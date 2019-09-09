@@ -242,21 +242,21 @@ namespace custom {
 
 <h5><img alt="Figure 18" src="https://raw.githubusercontent.com/IowaDave/pxt-constants/gh-pages/images/Figure%2018.png"><br>
 Figure 18<br>
-Custom blocks for YES and NO constants</h5>
+Custom blocks for yes and no constants</h5>
 
 <h5><img alt="Figure 19" src="https://raw.githubusercontent.com/IowaDave/pxt-constants/gh-pages/images/Figure%2019.png"><br>
 Figure 19<br>
-The YES and NO blocks are diamond-shaped, like the true and false logic blocks</h5>
+The yes and no blocks are diamond-shaped, like the true and false logic blocks</h5>
 
 <h4>REVIEW</h4>
 
 <p>MakeCode blocks do not directly implement the <code>const</code> keyword from JavaScript. You cannot create a constant value directly in Blocks.</p>
 
-<p>If you declare a const directly in the main JavaScript window, it will behave as a constant as long as you stay in JavaScript. However, MakeCode will change <code>const</code> to <code>let</code> when you switch to blocks, transforming your intended constant into a variable.</p>
+<p>If you declare a <code>const</code> directly in the main JavaScript window, it will enjoy JavaScript&rsquo;s protection as a constant for as long as you stay in JavaScript. However, MakeCode will change <code>const</code> to <code>let</code> when you switch to blocks, transforming your intended constant into a variable.</p>
 
 <p>A custom block is one way to attach a value to a name that functions like a constant. Your code can use it like a variable yet the blocks cannot easily reassign the name to another value.</p>
 
-<p>There might be other ways to achieve the same result. The approach we demonstrate in this article has two virtues. It is easy and it uses a method that MakeCode provides for the purpose.</p>
+<p>There might be other ways to achieve the same result. The approach we demonstrate in this article has appeal because it uses a method that MakeCode provides for the purpose.</p>
 
 <p>You can load a MakeCode editor into your browser with code already typed in for the custom blocks described above. Click the following link to access the code.</p>
 
