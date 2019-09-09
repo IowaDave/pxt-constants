@@ -21,21 +21,21 @@
 
 <p>The first reason is because it is good practice to use meaningful names for values in your code.</p>
 
-<p>For example, we know from Math that the circumference of a circle is approximately equal to the diameter multiplied by the number 3.14159. It is good coding practice to give that number a short, memorable name, such as &ldquo;pi&rdquo;. Use the name rather than the number to perform calculations. It makes your code easier for a human to read and to understand.</p>
+<p>For example, we know from Math that the circumference of a circle is approximately equal to the diameter multiplied by the number 3.14159. It is good coding practice to give that number a short, memorable name, such as <code>pi</code>. Use the name rather than the number to perform calculations. It makes your code easier for a human to read and to understand.</p>
 
 <p>The second reason is accuracy and consistency: type once, use many times.</p>
 
 <h4>JavaScript supports constants; Blocks do not</h4>
 
-<p>Here is the &ldquo;official JavaScript&rdquo; way to declare and use a constant. It is done with the keyword, &ldquo;const&rdquo;, which attaches the name &ldquo;pi&rdquo; to the value 3.14159 in Exhibit 1. If you type this code in the JavaScript window of MakeCode, it will actually compile and run on both the browser simulator and a real micro:bit. (Figure 1) The solution for the circumference of a circle having a diameter of 3 units, 9.42, will appear on the display.</p>
+<p>Here is the &ldquo;official JavaScript&rdquo; way to declare and use a constant. It is done with the keyword, &ldquo;const&rdquo;, which attaches the name <code>pi</code> to the value 3.14159 in Exhibit 1. If you type this code in the JavaScript window of MakeCode, it will actually compile and run on both the browser simulator and a real micro:bit. (Figure 1) The solution for the circumference of a circle having a diameter of 3 units, 9.42, will appear on the display.</p>
 
 <h4>Exhibit 1<br>
 Declare and use a constant</h4>
 
 <pre><code>
-const PI = 3.14159;
+const pi = 3.14159;
 let diameter = 3;
-let circumference = PI * diameter;
+let circumference = pi * diameter;
 basic.showNumber(circumference);
 </code></pre>
 
@@ -49,7 +49,7 @@ The JavaScript window with an example declaring a constant</h5>
 
 <p>Here is the problem: MakeCode will revise your code when you switch over to the Blocks window. Try it.</p>
 
-<p>Click the â€œBlocksâ€ icon to view the code as blocks. (Figure 2)</p>
+<p>Click the &ldquo;Blocks&rdquo; icon to view the code as blocks. (Figure 2)</p>
 
 <h5><img alt="Figure 2" src="https://raw.githubusercontent.com/IowaDave/pxt-constants/gh-pages/images/Figure%202.png"><br>
 Figure 2<br>
@@ -57,7 +57,7 @@ The JavaScript has been converted into blocks</h5>
 
 <p>Verify that the code still produces the correct result.</p>
 
-<p>Click the â€œJavaScriptâ€ icon again. Look at your code now. (Figure 3)</p>
+<p>Click the &ldquo;JavaScript&rdquo; icon again. Look at your code now. (Figure 3)</p>
 
 <h5><img alt="Figure 3" src="https://raw.githubusercontent.com/IowaDave/pxt-constants/gh-pages/images/Figure%203.png"><br>
 Figure 3<br>
@@ -65,11 +65,11 @@ The blocks have been converted back into JavaScript</h5>
 
 <p>Your declaration was this: <code>const pi = 3.14159</code>. Makecode changed it to this: <code>let pi = 3.14159</code>.</p>
 
-<p>By changing one word, <code>const</code> to <code>let</code>, MakeCode turned pi into a variable. We know this because <code>let</code> is a JavaScript keyword for declaring variables.</p>
+<p>By changing one word, <code>const</code> to <code>let</code>, MakeCode turned <code>pi</code> into a variable. We know this because <code>let</code> is a JavaScript keyword for declaring variables.</p>
 
-<p>Now, it is certainly good practice to use meaningful names for both variables and constants. It is not a mistake to use <code>let</code> rather than <code>const</code> as a way to attach the name pi to the number 3.14159. However, it creates a risk for errors elsewhere in your code.</p>
+<p>Now, it is certainly good practice to use meaningful names for both variables and constants. It is not a mistake to use <code>let</code> rather than <code>const</code> as a way to attach the name <code>pi</code> to the number 3.14159. However, it creates a risk for errors elsewhere in your code.</p>
 
-<p> risk is that a variableâ€™s name can be reassigned to a different value. Somewhere later in your code, when you are tired or in a hurry, you might enter something like the instructions shown in Figures 4 and 5.</p>
+<p>The risk is that a variable&rsquo;s name can be reassigned to a different value. Somewhere later in your code, when you are tired or in a hurry, you might enter something like the instructions shown in Figures 4 and 5.</p>
 
 <h5><img alt="Figure 4" src="https://raw.githubusercontent.com/IowaDave/pxt-constants/gh-pages/images/Figure%204.png"><br>
 Figure 4</h5>
@@ -78,13 +78,13 @@ Figure 4</h5>
 Figure 5<br>
 Examples of reassigning a variable name to a new value</h5>
 
-<p>MakeCode (and JavaScript) will obey instructions to change the value attached to a variable name that was declared with the keyword, <code>let</code> â€” even if you did not intend to instruct for that particular change!</p>
+<p>MakeCode (and JavaScript) will obey instructions to change the value attached to a variable name that was declared with the keyword, <code>let</code> &mdash; even if you did not intend to instruct for that particular change!</p>
 
-<p>After its value changes, calculations performed using the name PI will be incorrect. Bugs like this can and do happen even to experienced programmers. They can be difficult to locate.</p>
+<p>After its value changes, calculations performed using the name <code>pi</code> will be incorrect. Bugs like this can and do happen even to experienced programmers. They can be difficult to locate.</p>
 
 <p>This brings us to the third reason why you might want to declare a constant.</p>
 
-<p>JavaScript will not allow you to change the value attached to a name that was declared with the keyword â€œconstâ€. The code examples in Figures 4 and 5 above would produce an error, alerting you to the problem before it can cause trouble.</p>
+<p>JavaScript will not allow you to change the value attached to a name that was declared with the keyword <code>const</code>. The code examples in Figures 4 and 5 above would produce an error, alerting you to the problem before it can cause trouble.</p>
 
 <p>Now we see the problem: You cannot declare a const directly with blocks. If you do so in the main JavaScript window of MakeCode, it will be changed into a variable block.</p>
 
@@ -124,7 +124,7 @@ The Explorer link</h5>
 Figure 8<br>
 Partial list of the links under the Explorer</h5>
 
-<p>A window opens asking if you want to add custom blocks. Click â€œGo Aheadâ€. (Figure 9)</p>
+<p>A window opens asking if you want to add custom blocks. Click &ldquo;Go Ahead&rdquo;. (Figure 9)</p>
 
 <h5><img alt="Figure 9" src="https://raw.githubusercontent.com/IowaDave/pxt-constants/gh-pages/images/Figure%209.png"><br>
 Figure 9<br>
