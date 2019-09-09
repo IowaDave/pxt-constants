@@ -32,9 +32,9 @@
 <h5>Exhibit 1<br>
 Declare and use a constant</h5>
 
-<code>
+<pre><code>
 const PI = 3.14159;
 let diameter = 3;
 let circumference = PI * diameter;
 basic.showNumber(circumference);
-</code>
+</code></pre>
