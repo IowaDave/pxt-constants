@@ -29,8 +29,8 @@
 
 <p>Here is the &ldquo;official JavaScript&rdquo; way to declare and use a constant. It is done with the keyword, &ldquo;const&rdquo;, which attaches the name &ldquo;pi&rdquo; to the value 3.14159 in Exhibit 1. If you type this code in the JavaScript window of MakeCode, it will actually compile and run on both the browser simulator and a real micro:bit. (Figure 1) The solution for the circumference of a circle having a diameter of 3 units, 9.42, will appear on the display.</p>
 
-<h4>Exhibit 1<br>
-Declare and use a constant</h4>
+<h5>Exhibit 1<br>
+Declare and use a constant</h5>
 
 <pre><code>
 const PI = 3.14159;
