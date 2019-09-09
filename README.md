@@ -270,9 +270,7 @@ The yes and no blocks are diamond-shaped, like the true and false logic blocks</
 
 <ol>
 	<li>Click the gear icon in the upper-right area of the MakeCode editor</li>
-
 	<li>Choose Extensions from the menu that drops down</li>
-
 	<li>A text box will appear in the upper area of the MakeCode editor. Copy the following url and paste it into the text box: <a href="https://github.com/IowaDave/pxt-constants">https://github.com/IowaDave/pxt-constants</a></li>
 </ol>
 
