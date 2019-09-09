@@ -287,7 +287,7 @@ The yes and no blocks are diamond-shaped, like the true and false logic blocks</
 
 <p><em>Dear Experts: True, JavaScript (to be completely correct, Static TypeScript) does in fact provide a special, built-in constant named PI in the Math module. It is the value that should be used in calculations because it carries pi out to the full precision available in MakeCode.</em></p>
 
-<p><em>Alas, the Math group of blocks does not make it available by default.</em></p>
+<p><em>Alas, the Math group of blocks does not make it available by default. We propose a custom block to expose the constant in a useful way.</em></p>
 
 <p><em>With a bit of tricky coding this built-in constant can be coaxed into appearing as a gray block. Afterward, the gray block can be re-used by copying and pasting.</em></p>
 
