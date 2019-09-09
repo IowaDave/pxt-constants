@@ -27,13 +27,12 @@
 
 <h4>JavaScript supports constants; Blocks do not</h4>
 
-<p>Here is the &ldquo;official JavaScript&rdquo; way to declare and use a constant. It is done with the keyword, &ldquo;const&rdquo;, which attaches the name <code>pi</code> to the value 3.14159 in Exhibit 1. If you type this code in the JavaScript window of MakeCode, it will actually compile and run on both the browser simulator and a real micro:bit. (Figure 1) The solution for the circumference of a circle having a diameter of 3 units, 9.42, will appear on the display.</p>
+<p>The &ldquo;official JavaScript&rdquo; way to declare and use a constant is to use the keyword, <code>const</code>. For example, we use it to attach the name <code>pi</code> to the value 3.14159 in Exhibit 1. If you copy and paste this code into the JavaScript window of MakeCode, it will actually compile and run on both the browser simulator and a real micro:bit. (Figure 1) A solution for the circumference of a circle having a diameter of 3 units, 9.42, will appear on the display.</p>
 
-<h4>Exhibit 1<br>
-Declare and use a constant</h4>
+<h5>Exhibit 1<br>
+Declare and use a constant</h5>
 
-<pre><code>
-const pi = 3.14159;
+<pre><code>const pi = 3.14159;
 let diameter = 3;
 let circumference = pi * diameter;
 basic.showNumber(circumference);
@@ -43,7 +42,7 @@ basic.showNumber(circumference);
 Figure 1<br>
 The JavaScript window with an example declaring a constant</h5>
 
-<em>Dear Experts: Yes, we know about Math.PI. It will be used later in the article. Please kindly remember this article is about user-defined constant blocks.</em>
+<p><em>Dear Experts: Yes, we know about Math.PI. It will be used later in the article. Please kindly remember this article is about user-defined constant blocks.</em></p>
 
 <p>&ldquo;What is the problem?&rdquo; you might protest. &ldquo;I just declared and used a constant with JavaScript in MakeCode!&rdquo;</p>
 
@@ -141,3 +140,154 @@ Explorer list containing the custom.ts item</h5>
 <h5><img alt="Figure 11" src="https://raw.githubusercontent.com/IowaDave/pxt-constants/gh-pages/images/Figure%2011.png"><br>
 Figure 11<br>
 The first few lines of custom.ts default content. Note the web address for official MakeCode documentation about writing custom blocks.</br>
+
+<p>You can delete most of the default code examples in the custom.ts module. However, be sure to keep the parts shown in Figure 12, including the curly bracket at the end. This code creates a <code>namespace</code> named &ldquo;custom&rdquo;. The namespace establishes the environment for creating custom blocks using the MakeCode editor.</p>
+
+<h5><img alt="Figure 12" src="https://raw.githubusercontent.com/IowaDave/pxt-constants/gh-pages/images/Figure%2012.png"><br>
+Figure 12<br>
+The custom namespace</h5>
+
+<p>Custom blocks are created by typing specially-formatted code in-between the curly brackets shown in Figure 12, above, as demonstrated in Exhibit 2, below.</p>
+
+<p>Exhibit 2 lists a custom namespace containing one custom block, named <code>pi()</code>, which provides a rather precise value for the mathematical constant of the same name. The syntax is important. The simplest thing might be to copy this code and paste it into the custom.ts window of your MakeCode project, replacing what was there.</p>
+
+<h5>Exhibit 2
+custom.ts code for the custom constant block named pi</h5>
+<pre><code>/**
+ * Custom blocks
+ */
+//% weight=100 color=#0fbc11 icon="\uf0c3"
+namespace custom {
+    /**
+     * returns a constant numeric value of 3.141592563589793
+     */
+    //% block="pi"
+    export function pi(): number {
+        return Math.PI;
+    }
+}<code></pre>
+
+<p>Your code should look like the screen image in Figure 13.</p>
+
+<h5><img alt="Figure 13" src="https://raw.githubusercontent.com/IowaDave/pxt-constants/gh-pages/images/Figure%2013.png"><br>
+Figure 13<br>
+Custom code to create the PI block</h5>
+
+<p><em>Dear Experts: We used Math.PI in this example. We will discuss this special bit of JavaScript (and others like it) in more detail at the end of the article.</em></p>
+
+<p>Compile your custom block code by clicking the Blocks icon. If all goes well, you will see a bright green Custom group added to the main blocks list. (Figure 14) If there are problems, stay in JavaScript and look for squiggly red underlines indicating potential trouble spots in your custom block code.</p>
+
+<h5><img alt="Figure 14" src="https://raw.githubusercontent.com/IowaDave/pxt-constants/gh-pages/images/Figure%2014.png"><br>
+Figure 14<br>
+Blocks appear if code compiles correctly</h5>
+
+<p>Reload the browser window to make your new custom block available to MakeCode. For example, in the Chrome browser the reload icon looks like a circle with an arrow in it. (Figure 15)</p>
+
+<h5><img alt="Figure 15" src="https://raw.githubusercontent.com/IowaDave/pxt-constants/gh-pages/images/Figure%2015.png"><br>
+Figure 15<br>
+The Chrome browser reload icon.</h5>
+
+<p>Click the Custom group to reveal the new block. (Figure 16)</p>
+
+<h5><img alt="Figure 16" src="https://raw.githubusercontent.com/IowaDave/pxt-constants/gh-pages/images/Figure%2016.png"><br>
+Figure 16<br>
+The pi block in the Custom group</h5>
+
+<p>Allow your mouse to linger on the new block. A &ldquo;help&rdquo; message will pop up. This is the comment line that you typed in your custom code. (Figure 17)</p>
+
+<h5><img alt="Figure 17" src="https://raw.githubusercontent.com/IowaDave/pxt-constants/gh-pages/images/Figure%2017.png"><br>
+Figure 17<br>
+Helpful popup text from the comment in the custom block code</h5>
+
+<p>You can use the custom pi block anywhere you would use the number 3.141592653589793 or a numeric variable, with one exception.</p>
+
+<p>MakeCode will not allow you to change its value with the blocks.</p>
+
+<p>Of course, that protective effect is the whole idea of using a constant.</p>
+
+<p>You can include more than one constant in your custom.ts file. And you can make constant blocks of other types, not only of numbers.</p>
+
+<p>For example, Exhibit 3 lists code that extends the custom namespace by adding boolean constants to substitute for true and false when it might be more clear to say YES or NO. Again, just copy the code in Exhibit 2 and paste it into your custom.ts file, replacing what was there before. (Figures 18 and 19)</p>
+
+<h5>Exhibit 3<br>
+custom.ts code defining three custom constant blocks</h5>
+
+<pre><code>/**
+ * Custom blocks
+ */
+//% weight=100 color=#0fbc11 icon="\uf0c3"
+namespace custom {
+    /**
+     * returns a constant numeric value of 3.141592563589793
+     */
+    //% block="pi"
+    export function pi(): number {
+        return Math.PI;
+    }
+    /**
+     * return a constant boolean value of true
+     */
+    //% block="yes"
+    export function yes(): boolean {
+        return true;
+    }
+    /**
+     * return a constant boolean value of false
+     */
+    //% block="no"
+    export function no(): boolean {
+        return false;
+    }
+}</code></pre>
+
+<h5><img alt="Figure 18" src="https://raw.githubusercontent.com/IowaDave/pxt-constants/gh-pages/images/Figure%2018.png"><br>
+Figure 18<br>
+Custom blocks for YES and NO constants</h5>
+
+<h5><img alt="Figure 19" src="https://raw.githubusercontent.com/IowaDave/pxt-constants/gh-pages/images/Figure%2019.png"><br>
+Figure 19<br>
+The YES and NO blocks are diamond-shaped, like the true and false logic blocks</h5>
+
+<h4>REVIEW</h4>
+
+<p>MakeCode blocks do not directly implement the <code>const</code> keyword from JavaScript. You cannot create a constant value directly in Blocks.</p>
+
+<p>If you declare a const directly in the main JavaScript window, it will behave as a constant as long as you stay in JavaScript. However, MakeCode will change <code>const</code> to <code>let</code> when you switch to blocks, transforming your intended constant into a variable.</p>
+
+<p>A custom block is one way to attach a value to a name that functions like a constant. Your code can use it like a variable yet the blocks cannot easily reassign the name to another value.</p>
+
+<p>There might be other ways to achieve the same result. The approach we demonstrate in this article has two virtues. It is easy and it uses a method that MakeCode provides for the purpose.</p>
+
+<p>You can load a MakeCode editor into your browser with code already typed in for the custom blocks described above. Click the following link to access the code.</p>
+
+<a href="https://makecode.microbit.org/#pub:_1wHWrFeLaF10">https://makecode.microbit.org/#pub:&#95;1wHWrFeLaF10</a>
+
+<p>A MakeCode extension package containing these custom blocks accompanies this article. You can choose to load the extension package into your project, bypassing the need to create the custom blocks yourself. The steps to do this are:</p>
+
+<ol>
+	<li>Click the gear icon in the upper-right area of the MakeCode editor</li>
+
+	<li>Choose Extensions from the menu that drops down</li>
+
+	<li>A text box will appear in the upper area of the MakeCode editor. Copy the following url and paste it into the text box: <a href="https://github.com/IowaDave/pxt-constants">https://github.com/IowaDave/pxt-constants</a></li>
+</ol>
+
+<p>A text box will appear that is mostly empty, except for the title, &ldquo;constants&rdquo;, and a notice that user-provided extensions are not &ldquo;endorsed&rdquo; by Microsoft. Click the text box if you choose to go ahead and install the extension in your project.</p>
+
+<p>By the way, you can view the code for the extension package before you decide whether to include it in your project. Paste the link given in step 3, above, into a new browser window, or simply click the link. It will connect you to the master repository for the extension package. The relevant code is in the file named &ldquo;main.ts&rdquo;. Click on the file name to view the code.</p>
+
+<p>You can use the code in the extension package as examples for writing other custom constant blocks that you create in the custom.ts file of your project.</p>
+
+<p>The syntax for custom blocks is important. Follow the examples in this article closely when creating your own custom constants. A little bit of trial and error can go a long way toward better understanding. Complete documentation about custom blocks begins at the following website:</p>
+
+<a href="https://makecode.microbit.org/blocks/custom">https://makecode.microbit.org/blocks/custom</a>
+
+<p><em>Dear Experts: As you know, JavaScript (to be completely correct, Static TypeScript) does in fact provide a special, built-in constant named PI in the Math module. It is the value that should be used in calculations because it carries pi out to the full precision available in MakeCode.</em></p>
+
+<p><em>Alas, the Math group of blocks does not make it available by default.</em></p>
+
+<p><em>With a bit of tricky coding this built-in constant can be coaxed into appearing as a gray block. Afterward, the gray block can be re-used by copying and pasting.</em></p>
+
+<p></em>This article focuses on how to create constant-valued custom blocks having any value the user chooses to assign. We selected pi as an example, and showed how to assign it the very precise value of Math.PI.</em></p>
+
+<p><em>We leave it as an exercise for advanced readers to figure out how to utilize the built-in constant for pi as a gray block.</em></p>
