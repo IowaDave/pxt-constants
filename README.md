@@ -38,8 +38,8 @@ let circumference = pi * diameter;
 basic.showNumber(circumference);
 </code></pre>
 
-<h5><img alt="Figure 1" src="https://raw.githubusercontent.com/IowaDave/pxt-constants/gh-pages/images/Figure%201.png"><br>
-Figure 1<br>
+<h5><img alt="Figure 1" src="https://raw.githubusercontent.com/IowaDave/pxt-constants/gh-pages/images/Figure%201.png">
+<br>Figure 1<br>
 The JavaScript window with an example declaring a constant</h5>
 
 <p><em>Dear Experts: Yes, we know about Math.PI. It will be used later in the article. Please kindly remember this article is about user-defined constant blocks.</em></p>
@@ -50,16 +50,16 @@ The JavaScript window with an example declaring a constant</h5>
 
 <p>Click the &ldquo;Blocks&rdquo; icon to view the code as blocks. (Figure 2)</p>
 
-<h5><img alt="Figure 2" src="https://raw.githubusercontent.com/IowaDave/pxt-constants/gh-pages/images/Figure%202.png"><br>
-Figure 2<br>
+<h5><img alt="Figure 2" src="https://raw.githubusercontent.com/IowaDave/pxt-constants/gh-pages/images/Figure%202.png">
+<br>Figure 2<br>
 The JavaScript has been converted into blocks</h5>
 
 <p>Verify that the code still produces the correct result.</p>
 
 <p>Click the &ldquo;JavaScript&rdquo; icon again. Look at your code now. (Figure 3)</p>
 
-<h5><img alt="Figure 3" src="https://raw.githubusercontent.com/IowaDave/pxt-constants/gh-pages/images/Figure%203.png"><br>
-Figure 3<br>
+<h5><img alt="Figure 3" src="https://raw.githubusercontent.com/IowaDave/pxt-constants/gh-pages/images/Figure%203.png">
+<br>Figure 3<br>
 The blocks have been converted back into JavaScript</h5>
 
 <p>Your declaration was this: <code>const pi = 3.14159</code>. Makecode changed it to this: <code>let pi = 3.14159</code>.</p>
@@ -70,11 +70,11 @@ The blocks have been converted back into JavaScript</h5>
 
 <p>The risk is that a variable&rsquo;s name can be reassigned to a different value. Somewhere later in your code, when you are tired or in a hurry, you might enter something like the instructions shown in Figures 4 and 5.</p>
 
-<h5><img alt="Figure 4" src="https://raw.githubusercontent.com/IowaDave/pxt-constants/gh-pages/images/Figure%204.png"><br>
-Figure 4</h5>
+<h5><img alt="Figure 4" src="https://raw.githubusercontent.com/IowaDave/pxt-constants/gh-pages/images/Figure%204.png">
+<br>Figure 4</h5>
 
-<h5><img alt="Figure 5" src="https://raw.githubusercontent.com/IowaDave/pxt-constants/gh-pages/images/Figure%205.png"><br>
-Figure 5<br>
+<h5><img alt="Figure 5" src="https://raw.githubusercontent.com/IowaDave/pxt-constants/gh-pages/images/Figure%205.png">
+<br>Figure 5<br>
 Examples of reassigning a variable name to a new value</h5>
 
 <p>MakeCode (and JavaScript) will obey instructions to change the value attached to a variable name that was declared with the keyword, <code>let</code> &mdash; even if you did not intend to instruct for that particular change!</p>
@@ -85,9 +85,9 @@ Examples of reassigning a variable name to a new value</h5>
 
 <p>JavaScript will not allow you to change the value attached to a name that was declared with the keyword <code>const</code>. The code examples in Figures 4 and 5 above would produce an error, alerting you to the problem before it can cause trouble.</p>
 
-<p>Now we see the problem: You cannot declare a const directly with blocks. If you do so in the main JavaScript window of MakeCode, it will be changed into a variable block.</p>
+<p>Now we see the problem: You cannot declare a <code>const</code> directly with blocks. If you do so in the main JavaScript window of MakeCode, it will be changed into a variable block.</p>
 
-<p>Solution: create a custom block that functions like a const. And here is happy news: the MakeCode editor is the only tool you need.</p> 
+<p>Solution: create a custom block that functions like a <code>const</code>. And here is happy news: the MakeCode editor is the only tool you need!</p> 
 
 <p>The official documentation for custom blocks, found at <a href="https://makecode.microbit.org/blocks/custom">https://makecode.microbit.org/blocks/custom</a>, states, &ldquo;Any exported JavaScript function can be turned into a block by simply adding a //% block comment.&rdquo;</p>
 
@@ -107,14 +107,14 @@ Examples of reassigning a variable name to a new value</h5>
 
 <p>Click the JavaScript icon to put MakeCode into scripting mode. In a new project it would look like Figure 6.</p>
 
-<h5><img alt="Figure 6" src="https://raw.githubusercontent.com/IowaDave/pxt-constants/gh-pages/images/Figure%206.png"><br>
-Figure 6<br>
+<h5><img alt="Figure 6" src="https://raw.githubusercontent.com/IowaDave/pxt-constants/gh-pages/images/Figure%206.png">
+<br>Figure 6<br>
 JavaScript mode</h5>
 
-<p>With JavaScript active, locate the link that says &ldquo;Explorer >&rdquo; (Figure 7)</p>
+<p>With JavaScript active, locate the link that says &ldquo;Explorer&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;>&rdquo; (Figure 7)</p>
 
-<h5><img alt="Figure 7" src="https://raw.githubusercontent.com/IowaDave/pxt-constants/gh-pages/images/Figure%207.png"><br>
-Figure 7<br>
+<h5><img alt="Figure 7" src="https://raw.githubusercontent.com/IowaDave/pxt-constants/gh-pages/images/Figure%207.png">
+<br>Figure 7<br>
 The Explorer link</h5>
 
 <p>Click the Explorer link. A list of links to various code modules drops down. Keep your focus on the top item, the Explorer link. Notice that a plus sign, &ldquo;+&rdquo;, has been added to the Explorer link. (Figure 8) Click the plus sign.</p>
@@ -125,31 +125,31 @@ Partial list of the links under the Explorer</h5>
 
 <p>A window opens asking if you want to add custom blocks. Click &ldquo;Go Ahead&rdquo;. (Figure 9)</p>
 
-<h5><img alt="Figure 9" src="https://raw.githubusercontent.com/IowaDave/pxt-constants/gh-pages/images/Figure%209.png"><br>
-Figure 9<br>
+<h5><img alt="Figure 9" src="https://raw.githubusercontent.com/IowaDave/pxt-constants/gh-pages/images/Figure%209.png">
+<br>Figure 9<br>
 The custom blocks dialog window</h5>
 
 <p>A new module named custom.ts will appear and be highlighted in the Explorer list. In future when you want to edit the custom.ts file, navigate to it under the Explorer and click to highlight it again.</p>
 
 <p>The JavaScript window will fill in with the custom.ts code ready for editing. When you first add custom.ts to your project, it will contain code examples provided by default. (Figures 10 and 11)</p>
 
-<h5><img alt="Figure 10" src="https://raw.githubusercontent.com/IowaDave/pxt-constants/gh-pages/images/Figure%2010.png"><br>
-Figure 10<br>
+<h5><img alt="Figure 10" src="https://raw.githubusercontent.com/IowaDave/pxt-constants/gh-pages/images/Figure%2010.png">
+<br>Figure 10<br>
 Explorer list containing the custom.ts item</h5>
 
 <h5><img alt="Figure 11" src="https://raw.githubusercontent.com/IowaDave/pxt-constants/gh-pages/images/Figure%2011.png"><br>
 Figure 11<br>
-The first few lines of custom.ts default content. Note the web address for official MakeCode documentation about writing custom blocks.</br>
+The first few lines of custom.ts default content. Note the web address for official MakeCode documentation about writing custom blocks.</br></h5>
 
 <p>You can delete most of the default code examples in the custom.ts module. However, be sure to keep the parts shown in Figure 12, including the curly bracket at the end. This code creates a <code>namespace</code> named &ldquo;custom&rdquo;. The namespace establishes the environment for creating custom blocks using the MakeCode editor.</p>
 
-<h5><img alt="Figure 12" src="https://raw.githubusercontent.com/IowaDave/pxt-constants/gh-pages/images/Figure%2012.png"><br>
-Figure 12<br>
+<h5><img alt="Figure 12" src="https://raw.githubusercontent.com/IowaDave/pxt-constants/gh-pages/images/Figure%2012.png">
+<br>Figure 12<br>
 The custom namespace</h5>
 
 <p>Custom blocks are created by typing specially-formatted code in-between the curly brackets shown in Figure 12, above, as demonstrated in Exhibit 2, below.</p>
 
-<p>Exhibit 2 lists a custom namespace containing one custom block, named <code>pi()</code>, which provides a rather precise value for the mathematical constant of the same name. The syntax is important. The simplest thing might be to copy this code and paste it into the custom.ts window of your MakeCode project, replacing what was there.</p>
+<p>Exhibit 2 lists a custom namespace containing one custom block, named <code>pi</code>, which provides a rather precise value for the mathematical constant of the same name. The syntax is important. The simplest thing might be to copy this code and paste it into the custom.ts window of your MakeCode project, replacing what was there.</p>
 
 <h5>Exhibit 2
 custom.ts code for the custom constant block named pi</h5>
@@ -165,26 +165,26 @@ namespace custom {
     export function pi(): number {
         return Math.PI;
     }
-}<code></pre>
+}</code></pre>
 
 <p>Your code should look like the screen image in Figure 13.</p>
 
-<h5><img alt="Figure 13" src="https://raw.githubusercontent.com/IowaDave/pxt-constants/gh-pages/images/Figure%2013.png"><br>
-Figure 13<br>
+<h5><img alt="Figure 13" src="https://raw.githubusercontent.com/IowaDave/pxt-constants/gh-pages/images/Figure%2013.png">
+<br>Figure 13<br>
 Custom code to create the PI block</h5>
 
 <p><em>Dear Experts: We used Math.PI in this example. We will discuss this special bit of JavaScript (and others like it) in more detail at the end of the article.</em></p>
 
 <p>Compile your custom block code by clicking the Blocks icon. If all goes well, you will see a bright green Custom group added to the main blocks list. (Figure 14) If there are problems, stay in JavaScript and look for squiggly red underlines indicating potential trouble spots in your custom block code.</p>
 
-<h5><img alt="Figure 14" src="https://raw.githubusercontent.com/IowaDave/pxt-constants/gh-pages/images/Figure%2014.png"><br>
-Figure 14<br>
+<h5><img alt="Figure 14" src="https://raw.githubusercontent.com/IowaDave/pxt-constants/gh-pages/images/Figure%2014.png">
+<br>Figure 14<br>
 Blocks appear if code compiles correctly</h5>
 
 <p>Reload the browser window to make your new custom block available to MakeCode. For example, in the Chrome browser the reload icon looks like a circle with an arrow in it. (Figure 15)</p>
 
-<h5><img alt="Figure 15" src="https://raw.githubusercontent.com/IowaDave/pxt-constants/gh-pages/images/Figure%2015.png"><br>
-Figure 15<br>
+<h5><img alt="Figure 15" src="https://raw.githubusercontent.com/IowaDave/pxt-constants/gh-pages/images/Figure%2015.png">
+<br>Figure 15<br>
 The Chrome browser reload icon.</h5>
 
 <p>Click the Custom group to reveal the new block. (Figure 16)</p>
