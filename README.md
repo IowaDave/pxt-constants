@@ -277,7 +277,7 @@ The yes and no blocks are diamond-shaped, like the true and false logic blocks</
 	<li>Click the text box if you choose to go ahead and install the extension in your project.</li>
 </ol>
 
-<p>By the way, you can view the code for the extension package before you decide whether to include it in your project. Paste the link given in step 3, above, into a new browser window, or simply click the link. It will connect you to the master repository for the extension package. The relevant code is in the file named &ldquo;main.ts&rdquo;. Click on the file name to view the code.</p>
+<p>By the way, you can view the code for the extension package before you decide whether to include it in your project. Paste the link given in step 4, above, into a new browser window, or simply click the link. It will connect you to the master repository for the extension package. The relevant code is in the file named &ldquo;main.ts&rdquo;. Click on the file name to view the code.</p>
 
 <p>You can use the code in the extension package as examples for writing other custom constant blocks that you create in the custom.ts file of your project.</p>
 
