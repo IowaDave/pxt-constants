@@ -39,8 +39,8 @@ let circumference = PI * diameter;
 basic.showNumber(circumference);
 </code></pre>
 
-<img alt="Figure 1" src="https://raw.githubusercontent.com/IowaDave/pxt-constants/gh-pages/images/Figure%201.png">
-<h5>Figure 1<br>
+<h5><img alt="Figure 1" src="https://raw.githubusercontent.com/IowaDave/pxt-constants/gh-pages/images/Figure%201.png">
+Figure 1<br>
 The JavaScript window with an example declaring a constant</h5>
 
 <em>Dear Experts: Yes, we know about Math.PI. It will be used later in the article. Please kindly remember this article is about user-defined constant blocks.</em>
